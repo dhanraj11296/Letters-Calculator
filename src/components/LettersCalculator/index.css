@@ -1,0 +1,74 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+.lettersCalculatorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 992px) {
+  .lettersCalculatorContainer {
+    flex-direction: row;
+  }
+}
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+.inputPhraseContainer {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  color: white;
+  font-size: 20px;
+  border: 1px solid #e4e7eb;
+  border-radius: 4px;
+}
+.lettersInput {
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  outline: none;
+}
+.lettersCount {
+  align-self: center;
+  color: #219a6f;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+.letterImg {
+  width: 100%;
+  order: 0;
+}
+@media screen and (min-width: 992px) {
+  .letterImg {
+    width: 550px;
+    order: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .letterImg {
+    width: 700px;
+  }
+}
